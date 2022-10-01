@@ -1,0 +1,203 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    /* 1rem = 16px */
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background-color: white;
+    letter-spacing: 1px;
+}
+
+button{
+    background-color: #ff0e83;
+    color: white;
+    border: 1px solid white;
+    font-size: 0.875rem;
+    padding: 13px 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border-color:#ff0e83;
+}
+/* HEADER */
+header{
+    background-color: #4e2a84;
+    padding: 20px 0;
+}
+.header__content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__content ul{
+    list-style: none;
+}
+.header__content ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+
+}
+
+.header__content ul li{
+    display: inline;
+    margin: 0 1rem;
+}
+.header__content p{
+    font-size: 2.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.header__content ul li a:hover{
+    color: #ff0e83;
+}
+.header__content ul .active a{ 
+    color: #ff0e83;
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/b3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    text-align: center;
+    color: white;
+    /* chỉ được áp dụng khi chỉ có 1 thẻ con duy nhất */
+    display: flex;
+    /* chỉ dùng khi thẻ con còn trống */
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .carousel__content h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.carousel .carousel__content p{
+    font-size: 1.1rem;
+    margin: 23px 0;
+}
+/* INTRO */
+.intro{
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-columns: repeat(4, 25%); */
+    /* fr: phân số */
+    /* mỗi column 1/4 */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intro__ab1{
+    /* số line bắt đầu của item, và số line kết thúc */
+    /* số cột mà nó chiếm */
+    grid-column: 2 / 4;
+    /* grid-column: 2 / span 2(số cột mà item chiếm); */
+}
+
+.intro__text1{
+    grid-column: 1 / 3;
+}
+
+.intro__ab4{
+    grid-column: 3 / 5;
+}
+
+.intro__item img{
+    width: 100%;
+    /* để cho nó chuyển sang dạng khác khỏi hở */
+    display: block;
+
+}
+
+.intro__item{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.intro__text{
+    padding: 0 32px;
+}
+
+.intro__item h3{
+    color: white;;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.intro__item p{
+    font-size: 0.785rem;
+    color: #c1c1c1;
+    line-height: 29px;
+}
+.intro .intro__item:first-child, .intro .intro__item:nth-child(8){
+    background-color: #4e2a84;
+} 
+
+.intro .intro__item:nth-child(3){
+    background-color: #ff0e83;
+}
+
+.intro .intro__item:nth-child(4){
+    background-color: #ed6498;
+}
+
+.intro .intro__item:nth-child(6){
+    background-color: #836eaa;
+}
+.intro__ab3 img{
+    height: 475px;
+}
+/* NUMBER */
+.number__content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.number__item{
+    text-align: center;
+}
+.number__item h1{
+    font-size: 2rem;
+    color: #4e2a84;
+    font-weight: 600;
+}
+
+.number__item p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 24px 0;
+}
+/* SERVICE */
+/* GALLERY */
+/* TEAM */
+/* FEEDBACK */
+/* CONTACT */
+/* FOOTER */
