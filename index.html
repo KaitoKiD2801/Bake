@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,17 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
+
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Light Box -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
@@ -60,7 +65,8 @@
         <div class="intro__item intro__text1 intro__text">
             <div>
                 <h3>what we bake best for you</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aspernatur cupiditate et earum odio ipsum id impedit officiis autem culpa? Magni dolores eveniet amet. Similique, qui.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aspernatur cupiditate et earum
+                    odio ipsum id impedit officiis autem culpa? Magni dolores eveniet amet. Similique, qui.</p>
             </div>
         </div>
         <div class="intro__item">
@@ -91,7 +97,7 @@
             <div class="number__item">
                 <h1 class="counter">3500</h1>
                 <p>Coffee</p>
-            </div>  
+            </div>
             <div class="number__item">
                 <h1 class="counter">650</h1>
                 <p>Happy Client</p>
@@ -145,46 +151,58 @@
         <h2>out gallery</h2>
         <div class="gallery__content">
             <figure class="gallery__item gallery__g1">
-                <img src="./img/g1.jpg" alt="g1">
-                <figcaption class="gallery__overlay">
+                <a href="./img/g1.jpg" data-lightbox="gallery">
+                    <img src="./img/g1.jpg" alt="g1">
+                    <figcaption class="gallery__overlay">
                         <h3><span>OUR</span>GALLERY</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </figcaption>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g2.jpg" alt="g2">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
+                <a href="./img/g2.jpg" data-lightbox="gallery">
+                    <img src="./img/g2.jpg" alt="g2">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g3.jpg" alt="g3">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
+                <a href="./img/g3.jpg" data-lightbox="gallery">
+                    <img src="./img/g3.jpg" alt="g3">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g4.jpg" alt="g4">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
+                <a href="./img/g4.jpg" data-lightbox="gallery">
+                    <img src="./img/g4.jpg" alt="g4">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item">
-                <img src="./img/g5.jpg" alt="g5">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
+                <a href="./img/g5.jpg" data-lightbox="gallery">
+                    <img src="./img/g5.jpg" alt="g5">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
             <figure class="gallery__item gallery__g6">
-                <img src="./img/g6.jpg" alt="g6">
-                <figcaption class="gallery__overlay">
-                    <h3><span>OUR</span>GALLERY</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
+                <a href="./img/g6.jpg" data-lightbox="gallery">
+                    <img src="./img/g6.jpg" alt="g6">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
             </figure>
         </div>
     </div>
@@ -198,10 +216,8 @@
     <footer></footer>
 
     <!-- thư viện hỗ trợ jquerry giúp chạy hiệu ứng của các thư viện animation -->
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- jquery waypoint -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <!-- countup js -->
@@ -210,5 +226,9 @@
     <script>
         $('.counter').countUp();
     </script>
+
+    <!-- light box js -->
+    <script src="./js/lightbox.min.js"></script>
 </body>
-</html> 
+
+</html>
