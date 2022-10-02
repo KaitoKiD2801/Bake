@@ -35,6 +35,15 @@ button:hover{
     color: black;
     border-color:#ff0e83;
 }
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 /* HEADER */
 header{
     background-color: #4e2a84;
@@ -179,6 +188,7 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    padding: 50px 0;
 }
 .number__item{
     text-align: center;
@@ -196,7 +206,146 @@ header{
     padding: 24px 0;
 }
 /* SERVICE */
+.service{
+    background-image: url(../img/s1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.service h2{
+    color: white;
+}
+
+.service__content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__item i{
+    width: 105px;
+    height: 105px;
+    /* line-height chỉ dùng khi chỉ có 1 dòng */
+    line-height: 105px;
+    border: 1px solid #4e2a84;
+    border-radius: 50%;
+    background-color: white;
+    color: #4e2a84;
+    font-size: 3.75rem;
+    transition: all 0.5s;
+}
+.service__item h3{
+    font-size: 1.5rem;
+    margin: 17px 0;
+    font-weight: 500px;
+}
+
+.service__item p{
+    font-size: 0.875rem;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.service__item button{
+    padding: 12px 27px;
+    border-width: 2px;
+}
+
+.service__item:hover i{
+    color: #ff0e83;
+    
+}
+
 /* GALLERY */
+.gallery{
+    padding: 70px 0;
+}
+.gallery__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 15px;
+}
+
+.gallery__g1{
+    grid-column: 1 / 3;
+}
+
+.gallery__g6{
+    grid-column: 3 / 5;
+}
+
+.gallery__item img{
+    width: 100%;
+    height: 100%;
+}
+.gallery__item{
+    position: relative;
+    /* sẽ bị ẩn tất cả thẻ con khi bị lố khỏi thẻ cha */
+    overflow: hidden;
+}
+.gallery__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 132, 163, 0.2);
+    color: white;
+    padding: 38px 28px;
+    text-align: right;
+}
+
+.gallery__overlay p{
+    position: absolute;
+    bottom: 38px;
+    right: 28px;
+    font-size: 0.75rem;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.gallery__item:hover .gallery__overlay p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery__overlay h3{
+    font-size: 1.875rem;
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+.gallery__item:hover .gallery__overlay h3{
+    transform: translateY(0);
+}
+.gallery__overlay h3 span{
+    font-weight: 300;
+}
+
+.gallery__overlay h3::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    display: block;
+    margin-top: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.gallery__item:hover .gallery__overlay h3::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
 /* TEAM */
 /* FEEDBACK */
 /* CONTACT */
