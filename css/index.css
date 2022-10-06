@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* tránh tình trạng khi thêm padding vào sẽ bị rớt xuống hàng */
     box-sizing: border-box;
 }
 
@@ -53,7 +54,9 @@ h2{
 header{
     background-color: #4e2a84;
     padding: 20px 0;
+    /* dùng để khi lăn xuống, header sẽ lăn theo luôn */
     position: fixed;
+    /* số điểm để đè lên những thằng khác, dành cho thanh trượt */
     z-index: 100;
     width: 100%;
 }
@@ -103,9 +106,9 @@ header{
     height: 750px;
     text-align: center;
     color: white;
-    /* chỉ được áp dụng khi chỉ có 1 thẻ con duy nhất */
+    /* chỉ được áp dụng khi chỉ có 1 thẻ con duy nhất, đơn giản */
     display: flex;
-    /* chỉ dùng khi thẻ con còn trống */
+    /* chỉ dùng khi thẻ con còn trống, thẻ con có chỗ trống thì nó sẽ căn theo nó */
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +149,7 @@ header{
 
 .intro__item img{
     width: 100%;
-    /* để cho nó chuyển sang dạng khác khỏi hở */
+    /* để cho nó chuyển sang dạng khác khỏi hở chỗ điểm dao nhau giữa 2 ảnh*/
     display: block;
 
 }
@@ -195,6 +198,7 @@ header{
     width: 80%;
     margin: 0 auto;
     display: flex;
+    /* để căn khoảng cách giữa các phần tử */
     justify-content: space-around;
     padding: 50px 0;
 }
