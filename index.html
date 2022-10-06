@@ -30,13 +30,13 @@
         <div class="header__content">
             <p>BAKE</p>
             <nav>
-                <ul>
+                <ul id="mainNav">
                     <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CLIENTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#feedback">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +50,7 @@
         </div>
     </div>
     <!-- INTRO -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="intro__item intro__text">
             <div>
                 <h3>Tradition</h3>
@@ -117,7 +117,7 @@
         </div>
     </div>
     <!-- SERVICE -->
-    <div class="service">
+    <div class="service" id="service">
         <h2>our services</h2>
         <div class="service__content">
             <div class="service__item">
@@ -151,7 +151,7 @@
         </div>
     </div>
     <!-- GALLERY -->
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <h2>out gallery</h2>
         <div class="gallery__content">
             <figure class="gallery__item gallery__g1">
@@ -319,7 +319,7 @@
         </div>
     </div>
     <!-- FEEDBACK -->
-    <div class="feedback">
+    <div class="feedback" id="feedback">
         <h2>testimonials</h2>
         <div class="feedback__content">
             <div class="owl-carousel owl-theme">
@@ -345,9 +345,101 @@
         </div>
     </div>
     <!-- CONTACT -->
-    <div class="contact"></div>
+    <div class="contact" id="contact">
+        <h2>contact</h2>
+        <div class="contact__form">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+                <textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.92232419213!2d-82.59436669114524!3d27.99441157160181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida!5e0!3m2!1svi!2sus!4v1664805416633!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact__info">
+            <div class="contact__4item">
+                <i class="fa fa-home"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact__4item">
+                <i class="fa fa-phone"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact__4item">
+                <i class="fa fa-envelope-open"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__item">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem itaque et voluptatem ipsam.</p>  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem itaque et voluptatem ipsam.</p>
+                <div class="team__social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>working time</h3>
+                <p>Monday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Tuesday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Wednesday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Thursday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Friday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Saturday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+                <p>Sunday</p>
+                <p class="time">9h30 - 18h30</p>
+                <hr>
+            </div>
+            <div class="clear"></div>
+            <div class="footer__item">
+                <h3>twitter us</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div class="footer__item">
+                <h3>subscribe us</h3>
+                <form>
+                    <input type="email" placeholder="name@example.com">
+                    <button type="submit">Send</button>
+                </form>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dignissimos officiis commodi ducimus autem hic culpa repellat quo ut. Autem, officiis.</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; 2022 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, <span>Kevin Do</span></p>
+        </div>
+    </footer>
+    <!-- BACK TO TOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- thư viện hỗ trợ jquerry giúp chạy hiệu ứng của các thư viện animation -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -378,6 +470,22 @@
                 }
             }
         })
+    </script>
+    <!-- back to top js -->
+    <script src="./js/main_BTT.js"></script>
+    <script src="./js/util.js"></script>
+
+    <!-- navigation bar js -->
+    <script>
+        var mainNav = document.getElementById("mainNav");
+        var listNav = mainNav.getElementsByTagName("li");
+        for (var i = 0; i < listNav.length; i++){
+            listNav[i].addEventListener("click", function(){
+                var current = document.querySelector("#mainNav .active");
+                current.className = current.className.replace("active","");
+                this.className += "active";
+            })
+        }
     </script>
 </body>
 
